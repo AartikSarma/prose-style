@@ -215,6 +215,28 @@ The number was right, but it was written in the same voice as facts confirmed mo
 
 ---
 
+## 15. The verdict last
+
+**Before**
+
+> I ran it on my own reply from earlier in this session. It predates every version of the rulebook, so it is a fair specimen.
+>
+> [six paragraphs of findings, then the revision]
+>
+> **What the test says about the instrument.** The procedure caught real defects and produced no false alarms, which is the result I wanted.
+
+**After**
+
+> The procedure works: it caught real defects in a reply written before the rulebook existed, and it raised no false alarms. It was useless against that reply's worst problem, which was architectural.
+>
+> [then the findings and the revision]
+
+Showing the work before the conclusion feels rigorous, and that is why this failure survives revision - it reads as thoroughness rather than as delay. But a test report answers a question, and the answer is the verdict. Evidence supports a conclusion the reader already holds; it does not build one they are made to wait for.
+
+The same shape appears in review findings, benchmark results, debugging reports, and any reply that ends with "so the answer is." *Diagnostic: find the sentence that answers the question. If it is not in the first paragraph, move it there.*
+
+---
+
 ## Adding to this file
 
 When a reply reads badly, save it. Write the revision beside it, name the failure, and state the diagnostic in one sentence. An example drawn from a real reply is worth more than an invented one, because the invented failure is always a little too obvious.
