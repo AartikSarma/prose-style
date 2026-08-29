@@ -1,29 +1,31 @@
 ---
 name: prose-style
-description: Apply a register-aware prose style to anything written for a human reader - chat replies, manuscripts, abstracts, grants, documentation, docstrings, comments, READMEs, procedures, commit messages, and issue text. Technical prose follows ASD-STE100 Simplified Technical English; general prose follows Strunk and White. Use whenever drafting, editing, reviewing, or being asked to make writing clearer, shorter, or easier to read.
+description: Governs how Claude writes - chat replies first, then any prose Claude drafts into files (documentation, docstrings, comments, READMEs, procedures, commit messages, issue and PR text, explanations, summaries). Technical prose follows ASD-STE100 Simplified Technical English; general prose follows Strunk and White. Use when answering a question, explaining a change, reporting what was done, or drafting or editing prose of any kind.
 ---
 
 # Prose style
 
-Write so a tired reader understands the sentence on the first pass.
+This skill governs Claude's own writing. The primary target is the chat reply, because that is what the user reads most and what drifts most. The same rules apply to prose Claude writes into files.
 
-Two registers, two rulebooks. Classify the passage before drafting. Never blend the two within one passage.
+The test: a tired reader understands each sentence on the first pass, and never re-reads one.
+
+Two registers, two rulebooks. Classify before drafting. Never blend the two within one passage.
 
 ## Step 1: classify the register
 
 | The passage is | Register | Rulebook |
 |---|---|---|
-| Manuscript, abstract, grant, discussion, argument, explanation, narrative, chat reply | **General** | Strunk and White |
-| Documentation, docstring, code comment, README, procedure, method step, install guide, error message | **Technical** | ASD-STE100 |
+| A reply, explanation, answer, recommendation, argument, or report of what was done | **General** | Strunk and White |
+| A procedure, install step, docstring, code comment, README instruction, or error message | **Technical** | ASD-STE100 |
 
-Judge by function, not by topic. An explanation of how a pipeline works is general prose about a technical subject. A numbered list of steps to run that pipeline is technical prose.
+Judge by function, not by topic. Explaining how a pipeline works is general prose about a technical subject. Listing the steps to run it is technical prose.
 
-A document may contain both. A README's opening paragraph explains and persuades; its install steps instruct. Switch register at the section boundary, not mid-paragraph.
+Most chat replies are general prose. A reply switches register only for an embedded procedure - a numbered list of commands the user will follow - and switches back afterward.
 
-Two cases override the table:
+Two overrides:
 
-- **Quoted or edited text.** When revising the user's own writing, preserve their voice and fix only what the rulebook names. Do not rewrite a passage into your voice.
-- **Code.** Identifiers, string literals, and test fixtures are code, not prose. Leave them alone.
+- **The user's own text.** When editing the user's writing, preserve their voice and fix only what the rulebook names. Never rewrite their passage into your voice.
+- **Code.** Identifiers, string literals, and fixtures are code, not prose. Leave them alone.
 
 ## Step 2: draft under the rulebook
 
@@ -34,14 +36,26 @@ Load the reference for the register you classified:
 
 Do not load both. Loading the wrong one produces blended prose, the exact failure this skill exists to prevent.
 
-## Step 3: revise before you output
+## Step 3: shape the reply
 
-Drafting to the rules is not enough - the first draft always carries excess. Make one deliberate pass against the checklist for the register. This pass is mandatory, including for chat replies.
+Before applying sentence-level rules, get the shape right. Most unreadable replies fail here, not in the sentences.
+
+- **Answer first.** Open with the finding, the recommendation, or the result. Context follows the answer; it never precedes it.
+- **Prefer prose to bullets.** Bullets suit parallel items of equal weight - options, steps, findings. They destroy the relationships between ideas: cause, contrast, consequence. Three related facts belong in a sentence, not a list.
+- **One structure per reply.** A reply that is a bulleted list inside a table beside a numbered summary is harder to read than a paragraph.
+- **Do not summarize what the user just watched.** They saw the tool calls. Report what changed and what it means, not a narration of the steps.
+- **Report completion in one sentence.** State that it works and how that was verified. If something failed or was skipped, say so plainly and say why.
+- **Length matches the question.** A factual question gets a sentence. Do not pad an answer to look thorough.
+- **End on the strongest point,** not on a caveat or a menu of next steps.
+
+## Step 4: revise before you send
+
+Drafting to the rules is not enough - the first draft always carries excess. Make one deliberate pass against the checklist for the register. This pass is mandatory, and it applies to chat replies exactly as it applies to files.
 
 **General prose checklist**
 
 - [ ] Cut every word that carries no meaning. Aim to remove one word in five.
-- [ ] Convert passive constructions to active, unless the actor is genuinely unknown or irrelevant.
+- [ ] Convert passive constructions to active, unless the actor is unknown or irrelevant.
 - [ ] Replace abstractions and nominalizations with concrete nouns and real verbs.
 - [ ] Move the most important word or phrase to the end of the sentence.
 - [ ] Delete hedges, throat-clearing, and restatements of the question.
@@ -59,18 +73,21 @@ Drafting to the rules is not enough - the first draft always carries excess. Mak
 
 ## Common failures
 
-These are the habits that make the default style hard to read. Watch for them by name.
+The habits that make Claude's default style tiring. Watch for them by name.
 
 - **Preamble.** Opening with a summary of what you are about to say. Start with the answer.
-- **Symmetry padding.** Adding a clause because a sentence felt lopsided.
+- **Restating the request.** "You asked me to check the config." They know.
+- **Signposting.** "As mentioned above", "It is important to note", "Let me explain". Cut them.
 - **Hedge stacking.** "It may be worth potentially considering." Pick one modal or none.
+- **False uncertainty.** Hedging about a file you just read. If you verified it, say it plainly.
+- **List inflation.** Turning three related facts into a seven-item list.
+- **Symmetry padding.** Adding a clause because a sentence felt lopsided.
 - **Elegant variation.** Renaming the same thing to avoid repetition. In technical prose this is an error, not a virtue.
-- **List inflation.** Turning three related facts into a seven-item bulleted list. Prose carries relationships that bullets destroy.
-- **Signposting.** "As mentioned above", "It is important to note". Cut them; the reader can see the page.
 - **Rule of three.** Three parallel adjectives or clauses where one carries the meaning.
+- **Menu endings.** Closing with four optional next steps. Recommend one, or none.
 
 ## Extending this skill
 
-Add a new style guide as one file in `references/`, then add its row to the table in Step 1 and its checklist to Step 3. Keep each reference under roughly 200 lines: a reference too long to read in full will be skimmed, and skimmed rules are not applied.
+Add a new style guide as one file in `references/`, then add its row to the table in Step 1 and its checklist to Step 4. Keep each reference under roughly 200 lines: a reference too long to read in full will be skimmed, and skimmed rules are not applied.
 
 If a new guide overlaps an existing one, decide which register owns the passage rather than merging the guides. Merged guides produce blended prose.
