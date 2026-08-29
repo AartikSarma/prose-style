@@ -49,7 +49,7 @@ The user watched the tool calls scroll past. Restating them adds nothing and bur
 
 **After**
 
-> `parser.py:heck_row()` validates nothing, so a malformed row fails at runtime in all three call sites rather than at parse time. Add the validation there.
+> `parser.py:check_row()` validates nothing, so a malformed row fails at runtime in all three call sites rather than at parse time. Add the validation there.
 
 Seven bullets of unequal weight hide the causal chain that makes them meaningful. Prose carries *because* and *so*; bullets cannot. *Diagnostic: if the items connect by cause, contrast, or consequence, they are a sentence.*
 
