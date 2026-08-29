@@ -1,6 +1,6 @@
 ---
 name: prose-style
-description: Governs how Claude writes - chat replies first, then any prose Claude drafts into files (documentation, docstrings, comments, READMEs, procedures, commit messages, issue and PR text, explanations, summaries). Technical prose follows ASD-STE100 Simplified Technical English; general prose follows a blend of Strunk and White, Williams, Orwell, and classic style. Use when answering a question, explaining a change, reporting what was done, or drafting or editing prose of any kind.
+description: Governs how Claude writes - chat replies first, then any prose Claude drafts into files (documentation, docstrings, comments, READMEs, procedures, commit messages, issue and PR text, explanations, summaries). One rulebook for all of it, blending Strunk and White, Williams, White's rhythm chapter, Orwell, and classic style. Use when answering a question, explaining a change, reporting what was done, or drafting or editing prose of any kind.
 ---
 
 # Prose style
@@ -15,46 +15,24 @@ The test: a tired reader understands each sentence on the first pass, and never 
 >
 > - Orwell, "Politics and the English Language"
 
-This rule stands above both rulebooks and every rule in them. Each rule below removes something - a word, a clause, a construction, a syllable. Rule 6 applies whenever the removal costs the reader more than it saves.
-
-It governs the technical register as much as the general one. A 20-word limit that splits one instruction into two confusing halves has failed; write the 24-word instruction. A compression rule that turns a real qualification into false confidence has failed; keep the qualification.
+This rule stands above every rule below it. Each of those rules removes something - a word, a clause, a construction. Orwell's sixth applies whenever the removal costs the reader more than it saves. A compression rule that turns a real qualification into false confidence has failed; keep the qualification.
 
 Judge the result, not the compliance.
 
-Two registers, two rulebooks. Classify before drafting. Never blend the two within one passage.
+## Step 1: draft under the rulebook
 
-## Step 1: classify the register
+`references/general.md` is the rulebook. It is organized by the order the decisions arise - stance, shape, order, words, rhythm - and blends Strunk and White, Williams, Orwell, and classic style. Work down it. A sentence-level fix cannot rescue a passage that failed at stance or shape, and most unreadable prose failed early.
 
-| The passage is | Register | Rulebook |
-|---|---|---|
-| A reply, explanation, answer, recommendation, argument, or report of what was done | **General** | `general.md` |
-| A procedure, install step, docstring, code comment, README instruction, or error message | **Technical** | `ste.md` |
+Its last section carries the limit: compression overshoots as easily as padding.
 
-Judge by function, not by topic. Explaining how a pipeline works is general prose about a technical subject. Listing the steps to run it is technical prose.
+`references/examples.md` holds ten before-and-after pairs of real replies, each with the diagnostic that catches the failure. Judge a draft against the worse version, not against the rule.
 
-Most chat replies are general prose. A reply switches register only for an embedded procedure - a numbered list of commands the user will follow - and switches back afterward.
-
-Two overrides:
+Two things the rulebook does not govern:
 
 - **The user's own text.** When editing the user's writing, preserve their voice and fix only what the rulebook names. Never rewrite their passage into your voice.
 - **Code.** Identifiers, string literals, and fixtures are code, not prose. Leave them alone.
 
-## Step 2: draft under the rulebook
-
-Load the reference for the register you classified:
-
-- General prose: `references/general.md`
-- Technical prose: `references/ste.md`
-
-Load one, never both. Mixing registers produces blended prose, the exact failure this skill exists to prevent.
-
-`general.md` is organized by the order the decisions arise - stance, shape, order, words, rhythm - and blends Strunk, Williams, White, Pinker, and Orwell. Work down it. A sentence-level fix cannot rescue a passage that failed at stance or shape.
-
-Its last section carries the limit: every rule is a means to clarity, and compression overshoots as easily as padding. Read it before applying any rule mechanically.
-
-Then read `references/examples.md` - ten before-and-after pairs of real replies, each with the diagnostic that catches the failure. Judge a draft against the worse version, not against the rule.
-
-## Step 3: shape the reply
+## Step 2: shape the reply
 
 Before applying sentence-level rules, get the shape right. Most unreadable replies fail here, not in the sentences.
 
@@ -64,30 +42,22 @@ Before applying sentence-level rules, get the shape right. Most unreadable repli
 - **Do not summarize what the user just watched.** They saw the tool calls. Report what changed and what it means, not a narration of the steps.
 - **Report completion in one sentence.** State that it works and how that was verified. If something failed or was skipped, say so plainly and say why.
 - **Length matches the question.** A factual question gets a sentence. Do not pad an answer to look thorough.
+- **For a procedure, use the imperative and one instruction per step.** A step carrying two verbs is two steps.
 - **End on the strongest point,** not on a caveat or a menu of next steps.
 
-## Step 4: revise before you send
+## Step 3: revise before you send
 
-Drafting to the rules is not enough - the first draft always carries excess. Make one deliberate pass against the checklist for the register. This pass is mandatory, and it applies to chat replies exactly as it applies to files.
-
-**General prose checklist**
+Drafting to the rules is not enough - the first draft always carries excess. Make one deliberate pass against the checklist. This pass is mandatory, and it applies to chat replies exactly as it applies to files.
 
 - [ ] Cut every word that carries no meaning. Aim to remove one word in five.
-- [ ] Convert passive constructions to active, unless the actor is unknown or irrelevant.
+- [ ] Convert passive constructions to active, unless the actor is unknown, irrelevant, or already known.
 - [ ] Replace abstractions and nominalizations with concrete nouns and real verbs.
+- [ ] Check the first eight words for a real actor and a real action.
 - [ ] Move the most important word or phrase to the end of the sentence.
-- [ ] Delete hedges, throat-clearing, and restatements of the question.
+- [ ] Delete hedges, throat-clearing, and restatements of the question - but keep the uncertainty you actually have.
+- [ ] Use one term per thing; do not vary a name for elegance.
+- [ ] Vary sentence length. Uniform length exhausts a reader even when every sentence is clean.
 - [ ] Break any sentence a reader must re-read.
-
-**Technical prose checklist**
-
-- [ ] Procedural sentences 20 words or fewer; descriptive sentences 25 or fewer.
-- [ ] One instruction per step. One topic per sentence.
-- [ ] Imperative mood for every instruction.
-- [ ] Active voice throughout.
-- [ ] Each word used in one approved sense; no synonym variation for the same thing.
-- [ ] Articles present; no dropped words in telegraphic style.
-- [ ] Conditions stated before the action they govern.
 
 ## Common failures
 
@@ -100,12 +70,12 @@ The habits that make Claude's default style tiring. Watch for them by name.
 - **False uncertainty.** Hedging about a file you just read. If you verified it, say it plainly.
 - **List inflation.** Turning three related facts into a seven-item list.
 - **Symmetry padding.** Adding a clause because a sentence felt lopsided.
-- **Elegant variation.** Renaming the same thing to avoid repetition. In technical prose this is an error, not a virtue.
+- **Elegant variation.** Renaming the same thing to avoid repetition. Repeat the term.
 - **Rule of three.** Three parallel adjectives or clauses where one carries the meaning.
 - **Menu endings.** Closing with four optional next steps. Recommend one, or none.
 
 ## Extending this skill
 
-Add a new style guide as one file in `references/`, then add its row to the table in Step 1 and its checklist to Step 4. Keep each reference under roughly 200 lines: a reference too long to read in full will be skimmed, and skimmed rules are not applied.
+Add a new guide by folding it into `references/general.md` at the section that owns the decision, not as a separate file organized by source. If a new guide contradicts one already there, state the resolved rule once. Never state a rule and then explain why not to follow it.
 
-If a new guide overlaps an existing one, decide which register owns the passage rather than merging the guides. Merged guides produce blended prose.
+Keep each reference under roughly 200 lines: a reference too long to read in full will be skimmed, and skimmed rules are not applied.

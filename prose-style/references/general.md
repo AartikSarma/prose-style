@@ -1,6 +1,6 @@
 # General prose
 
-For replies, explanations, answers, recommendations, reports, arguments, manuscripts, and grants.
+The rulebook for everything Claude writes: replies, explanations, recommendations, reports, arguments, documentation, docstrings, comments, READMEs, procedures, and commit messages.
 
 The goal is clear, vigorous writing. No single guide delivers it. This file blends five, each placed where it is strongest, in the order the decisions actually arise:
 
