@@ -6,7 +6,17 @@ The aim is force. A reader should finish each sentence knowing more than when th
 
 ## The governing rules
 
-**Omit needless words.** A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason a drawing should have no unnecessary lines. This is the rule that does the most work. Apply it last, and apply it hard.
+**Omit needless words** (Rule 17; Rule 13 in Strunk's 1918 original). In full:
+
+> Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts. This requires not that the writer make all his sentences short, or that he avoid all detail and treat his subjects only in outline, but that every word tell.
+
+The third sentence is the limit on the second, and it governs revision. The rule does not ask for short sentences or thin treatment. It asks that every word do work. A long sentence in which every word tells passes; a short one carrying a needless qualifier fails.
+
+Two corollaries follow. Do not cut a qualification that would change the reader's decision - that word is doing work. Do not cut so far that the prose turns curt: a clipped sentence that forces the reader to reconstruct the meaning has failed the same test from the other side.
+
+This is the rule that does the most work. Apply it last, and apply it hard.
+
+Strunk singles out *the fact that* as "an especially debilitating expression" and asks that it be excised from every sentence in which it occurs.
 
 Common padding, with the fix:
 
