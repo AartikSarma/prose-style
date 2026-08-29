@@ -11,7 +11,7 @@ The goal is clear, vigorous writing. No single guide delivers it. This file blen
 | How sentences order information | 3. Order | Williams |
 | Which words survive | 4. Words | Strunk, Orwell |
 | How it sounds | 5. Rhythm | White |
-| When to break a rule | 6. The limit | Orwell, Strunk |
+| When to break a rule | 6. The limit | Strunk; Orwell, in `SKILL.md` |
 
 Work down the list. A sentence-level fix cannot rescue a passage that failed at stance or shape, and most unreadable prose failed early.
 
@@ -118,4 +118,4 @@ Do not overwrite, and do not affect a breezy manner. Enthusiasm is not content. 
 
 Every rule above is a means to clarity and force, never an end. Compression can overshoot: a clipped sentence that makes the reader reconstruct your meaning has failed the same test as a padded one, from the other side. Deleted hedges become false confidence. Deleted transitions become disconnected paragraphs.
 
-Judge the result, not the compliance. Break any rule sooner than write something barbarous.
+Judge the result, not the compliance. The governing rule in `SKILL.md` applies here.

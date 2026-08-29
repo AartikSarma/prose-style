@@ -1,6 +1,6 @@
 ---
 name: prose-style
-description: Governs how Claude writes - chat replies first, then any prose Claude drafts into files (documentation, docstrings, comments, READMEs, procedures, commit messages, issue and PR text, explanations, summaries). Technical prose follows ASD-STE100 Simplified Technical English; general prose follows Strunk and White. Use when answering a question, explaining a change, reporting what was done, or drafting or editing prose of any kind.
+description: Governs how Claude writes - chat replies first, then any prose Claude drafts into files (documentation, docstrings, comments, READMEs, procedures, commit messages, issue and PR text, explanations, summaries). Technical prose follows ASD-STE100 Simplified Technical English; general prose follows a blend of Strunk and White, Williams, Orwell, and classic style. Use when answering a question, explaining a change, reporting what was done, or drafting or editing prose of any kind.
 ---
 
 # Prose style
@@ -9,14 +9,26 @@ This skill governs Claude's own writing. The primary target is the chat reply, b
 
 The test: a tired reader understands each sentence on the first pass, and never re-reads one.
 
+## The governing rule
+
+> Break any of these rules sooner than say anything outright barbarous.
+>
+> - Orwell, "Politics and the English Language"
+
+This rule stands above both rulebooks and every rule in them. Each rule below removes something - a word, a clause, a construction, a syllable. Rule 6 applies whenever the removal costs the reader more than it saves.
+
+It governs the technical register as much as the general one. A 20-word limit that splits one instruction into two confusing halves has failed; write the 24-word instruction. A compression rule that turns a real qualification into false confidence has failed; keep the qualification.
+
+Judge the result, not the compliance.
+
 Two registers, two rulebooks. Classify before drafting. Never blend the two within one passage.
 
 ## Step 1: classify the register
 
 | The passage is | Register | Rulebook |
 |---|---|---|
-| A reply, explanation, answer, recommendation, argument, or report of what was done | **General** | Strunk and White |
-| A procedure, install step, docstring, code comment, README instruction, or error message | **Technical** | ASD-STE100 |
+| A reply, explanation, answer, recommendation, argument, or report of what was done | **General** | `general.md` |
+| A procedure, install step, docstring, code comment, README instruction, or error message | **Technical** | `ste.md` |
 
 Judge by function, not by topic. Explaining how a pipeline works is general prose about a technical subject. Listing the steps to run it is technical prose.
 
