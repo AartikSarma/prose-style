@@ -31,12 +31,14 @@ Two overrides:
 
 Load the reference for the register you classified:
 
-- General prose: `references/strunk-white.md` - what to cut. `references/williams.md` - how to order what remains. They are companions; load either or both.
+- General prose: `references/general.md`
 - Technical prose: `references/ste.md`
 
-Never mix registers. Loading `ste.md` alongside a general-prose reference produces blended prose, the exact failure this skill exists to prevent.
+Load one, never both. Mixing registers produces blended prose, the exact failure this skill exists to prevent.
 
-Reach for `williams.md` when a sentence obeys Strunk and still reads badly. That failure is almost always an ordering failure: the wrong information sits in the first four words or the last four.
+`general.md` is organized by the order the decisions arise - stance, shape, order, words, rhythm - and blends Strunk, Williams, White, Pinker, and Orwell. Work down it. A sentence-level fix cannot rescue a passage that failed at stance or shape.
+
+Its last two sections carry the overrides and the limit: where these guides are wrong, and when to break a rule. Read them before applying any rule mechanically.
 
 ## Step 3: shape the reply
 
