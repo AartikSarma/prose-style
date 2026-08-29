@@ -25,7 +25,7 @@ Judge the result, not the compliance.
 
 Its last section carries the limit: compression overshoots as easily as padding.
 
-`references/examples.md` holds ten before-and-after pairs of real replies, each with the diagnostic that catches the failure. Judge a draft against the worse version, not against the rule.
+`references/examples.md` holds fourteen before-and-after pairs of real replies, each with the diagnostic that catches the failure. Judge a draft against the worse version, not against the rule.
 
 Two things the rulebook does not govern:
 
@@ -47,17 +47,28 @@ Before applying sentence-level rules, get the shape right. Most unreadable repli
 
 ## Step 3: revise before you send
 
-Drafting to the rules is not enough - the first draft always carries excess. Make one deliberate pass against the checklist. This pass is mandatory, and it applies to chat replies exactly as it applies to files.
+Drafting to the rules is not enough - the first draft always carries excess. Make two passes, in order. Both are mandatory, and both apply to chat replies exactly as they apply to files.
+
+**Pass 1: cut.**
 
 - [ ] Cut every word that carries no meaning. Aim to remove one word in five.
 - [ ] Convert passive constructions to active, unless the actor is unknown, irrelevant, or already known.
 - [ ] Replace abstractions and nominalizations with concrete nouns and real verbs.
 - [ ] Check the first eight words for a real actor and a real action.
 - [ ] Move the most important word or phrase to the end of the sentence.
-- [ ] Delete hedges, throat-clearing, and restatements of the question - but keep the uncertainty you actually have.
+- [ ] Delete hedges, throat-clearing, and restatements of the question.
 - [ ] Use one term per thing; do not vary a name for elegance.
 - [ ] Vary sentence length. Uniform length exhausts a reader even when every sentence is clean.
-- [ ] Break any sentence a reader must re-read.
+
+**Pass 2: stop.** Pass 1 only removes. This pass asks what the removal cost, and it is where the governing rule becomes a procedure rather than a maxim.
+
+- [ ] Does every list you compressed into prose still read as prose? Parallel items of equal weight go back to being a list.
+- [ ] Is the actor still in the sentence? In reports of shared work, *I* and *you* are the characters. Do not passive them away.
+- [ ] Does every count match what follows it? If you announce a number, count.
+- [ ] Is the uncertainty you actually have still visible, and can the reader still tell a verified claim from a recalled one?
+- [ ] Can the reader stop after one pass, or must they reconstruct your meaning?
+
+A draft that passes 1 and fails 2 is not finished. It is compressed past the point where compression helps.
 
 ## Common failures
 

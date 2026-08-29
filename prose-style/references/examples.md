@@ -159,6 +159,62 @@ The terse version makes the reader reconstruct the meaning; the padded version m
 
 ---
 
+## 11. A list wearing prose
+
+**Before**
+
+> A skill at `~/.claude/skills/prose-style` holding three files: `SKILL.md` with the governing rule, reply-shape rules, a revision checklist, and a named list of my worst habits; `references/general.md`, a single rulebook organized by the order decisions arise - stance, shape, order, words, rhythm - blending five guides; and `references/examples.md`, ten before-and-after pairs, each with a diagnostic.
+
+**After**
+
+> Three files. `SKILL.md` - the governing rule, reply shape, revision checklist. `references/general.md` - the rulebook, organized by decision order. `references/examples.md` - before-and-after pairs with diagnostics.
+
+Three items of equal weight, crammed into sixty words with semicolons and no working verb. This is "prefer prose to bullets" applied past its purpose: prose carries cause and contrast, and these items share nothing but membership in a set. *Diagnostic: if the items relate only by belonging to the same set, they are a list.*
+
+---
+
+## 12. A count chosen for rhythm
+
+**Before**
+
+> The content changed shape three times. Strunk was demoted from the frame. Rule 17's limit clause went in. Your two corrections restructured the overrides. Finally the register split collapsed.
+
+**After**
+
+> The content changed shape four times.
+
+The number came from the cadence of the sentence, not from the items after it. Announced counts are the one claim in a draft that can be checked mechanically, so there is no excuse for getting one wrong. *Diagnostic: if you announce a number, count what follows.*
+
+---
+
+## 13. The actor erased from shared work
+
+**Before**
+
+> The per-source files were folded into one. The shape rules were moved into always-on config. Orwell's sixth rule was promoted to the top of the file.
+
+**After**
+
+> I folded the per-source files into one. You moved the shape rules into always-on config. Then you promoted Orwell's sixth rule to the top.
+
+Every actor here is known and present in the conversation, and who decided what is the substance of the report. The passive is correct when nobody needs the actor; in an account of shared work, the actors are the point. *Diagnostic: in a report of joint work, can the reader tell who did which part?*
+
+---
+
+## 14. A checkable claim asserted flat
+
+**Before**
+
+> Nine commits in a git repo here.
+
+**After**
+
+> Nine commits, just counted.
+
+The number was right, but it was written in the same voice as facts confirmed moments earlier, and nothing distinguished the two. Marking is cheap: three words separate a checked claim from a remembered one. *Diagnostic: for any number or name in the draft, did you read it, run it, or recall it? If the answers differ across the sentence, say so.*
+
+---
+
 ## Adding to this file
 
 When a reply reads badly, save it. Write the revision beside it, name the failure, and state the diagnostic in one sentence. An example drawn from a real reply is worth more than an invented one, because the invented failure is always a little too obvious.

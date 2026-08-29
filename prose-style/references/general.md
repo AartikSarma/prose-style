@@ -35,7 +35,9 @@ Three consequences.
 
 **One paragraph, one topic.** Open with the claim or the transition; close on the strongest note.
 
-**Prefer prose to bullets.** Bullets suit parallel items of equal weight. They destroy cause, contrast, and consequence, which is most of what an explanation carries. Three related facts belong in a sentence.
+**Prefer prose to bullets - and know when prose is wrong.** Bullets suit parallel items of equal weight. They destroy cause, contrast, and consequence, which is most of what an explanation carries. Three related facts belong in a sentence.
+
+*The converse failure:* items that are genuinely parallel and equal, crammed into one sentence with semicolons, produce a list wearing prose - a long clause with no working verb that the reader must unpack. If the items relate to each other only by belonging to the same set, set them out as a list.
 
 ## 3. Order: how sentences carry information
 
@@ -52,6 +54,8 @@ Three consequences.
 Signals: nouns in *-tion*, *-ment*, *-ance*, *-ity*, *-ness*; *is* linking two abstractions; the empty subjects *there is* and *it is*. Keep the nominalization when it names something already known, refers back to the previous sentence, or is the accepted term - *regression*, *randomization*.
 
 **Use the passive when the character is unknown, irrelevant, or already known; otherwise use the active.** The passive fails when it hides who acted. It succeeds when no one needs to know. Write *we measured the flow rate*, not *measurements were obtained* - but *the samples were stored at -80 C* is correct and needs no actor.
+
+*The converse failure:* erasing a character the reader cares about. In an account of shared work, *I* and *you* are the characters, and who decided what is the substance of the account. *The files were folded into one* hides the decision that *you asked me to fold the files* reports.
 
 **Old information first, new information last.** The opening words tell the reader what the sentence is about, so put there what they already know. The end carries the greatest weight, so put the news there: the point, the number, the name, the consequence.
 
@@ -91,6 +95,8 @@ The third sentence limits the second. The rule does not ask for short sentences 
 Strunk calls *the fact that* "an especially debilitating expression" and asks that it be cut from every sentence in which it occurs.
 
 **Be specific and concrete.** "It rained every day for a week" beats "A period of unfavorable weather set in." Prefer the particular to the general, the number to the adjective.
+
+*The converse failure:* a number chosen for the rhythm of the sentence rather than counted. If you announce three reasons, deliver three.
 
 **Put statements in positive form.** Assert. Use *not* for denial, not for evasion.
 
