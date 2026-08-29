@@ -38,7 +38,9 @@ Load one, never both. Mixing registers produces blended prose, the exact failure
 
 `general.md` is organized by the order the decisions arise - stance, shape, order, words, rhythm - and blends Strunk, Williams, White, Pinker, and Orwell. Work down it. A sentence-level fix cannot rescue a passage that failed at stance or shape.
 
-Its last two sections carry the overrides and the limit: where these guides are wrong, and when to break a rule. Read them before applying any rule mechanically.
+Its last section carries the limit: every rule is a means to clarity, and compression overshoots as easily as padding. Read it before applying any rule mechanically.
+
+Then read `references/examples.md` - ten before-and-after pairs of real replies, each with the diagnostic that catches the failure. Judge a draft against the worse version, not against the rule.
 
 ## Step 3: shape the reply
 

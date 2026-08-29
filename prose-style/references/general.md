@@ -11,7 +11,7 @@ The goal is clear, vigorous writing. No single guide delivers it. This file blen
 | How sentences order information | 3. Order | Williams |
 | Which words survive | 4. Words | Strunk, Orwell |
 | How it sounds | 5. Rhythm | White |
-| When to break a rule | 7. The limit | Orwell, Strunk |
+| When to break a rule | 6. The limit | Orwell, Strunk |
 
 Work down the list. A sentence-level fix cannot rescue a passage that failed at stance or shape, and most unreadable prose failed early.
 
@@ -50,6 +50,8 @@ Three consequences.
 | Performance of the analysis was done by the script. | The script analyzed the data. |
 
 Signals: nouns in *-tion*, *-ment*, *-ance*, *-ity*, *-ness*; *is* linking two abstractions; the empty subjects *there is* and *it is*. Keep the nominalization when it names something already known, refers back to the previous sentence, or is the accepted term - *regression*, *randomization*.
+
+**Use the passive when the character is unknown, irrelevant, or already known; otherwise use the active.** The passive fails when it hides who acted. It succeeds when no one needs to know. Write *we measured the flow rate*, not *measurements were obtained* - but *the samples were stored at -80 C* is correct and needs no actor.
 
 **Old information first, new information last.** The opening words tell the reader what the sentence is about, so put there what they already know. The end carries the greatest weight, so put the news there: the point, the number, the name, the consequence.
 
@@ -98,6 +100,12 @@ Strunk calls *the fact that* "an especially debilitating expression" and asks th
 
 **Avoid dead metaphors** (Orwell). Figures worn smooth by print have stopped meaning anything: *leverage*, *surface* as a verb, *robust*, *seamless*, *deep dive*, *low-hanging fruit*. Either use a live image or say the thing plainly.
 
+**Use the everyday word for a general reader and the technical term for a specialist.** For a specialist, the everyday equivalent is usually less precise, and precision outranks familiarity.
+
+**Use singular *they*** for a person whose pronouns are unstated. A name is not evidence of pronouns.
+
+Garner's *Modern English Usage* settles any disputed usage this file does not; his Language-Change Index rates how far a prescription has been overtaken.
+
 ## 5. Rhythm
 
 White's subject, and the one Strunk never addresses. Uniform sentence length exhausts a reader even when every sentence is clean. Vary it. A short sentence after two long ones lands hard.
@@ -106,34 +114,7 @@ Read the passage aloud, or as near as you can. Prose that resists the voice will
 
 Do not overwrite, and do not affect a breezy manner. Enthusiasm is not content. When a sentence resists revision, the thought behind it is usually unclear - fix the thought.
 
-## 6. Orwell's six rules
-
-The best short summary of everything above, from "Politics and the English Language" (1946):
-
-1. Never use a metaphor, simile, or other figure of speech which you are used to seeing in print.
-2. Never use a long word where a short one will do.
-3. If it is possible to cut a word out, always cut it out.
-4. Never use the passive where you can use the active.
-5. Never use a foreign phrase, a scientific word, or a jargon word if you can think of an everyday English equivalent.
-6. Break any of these rules sooner than say anything outright barbarous.
-
-Rule 4 is too broad; see the override below. Rule 6 governs this whole file.
-
-## 7. Where the guides are wrong
-
-Apply these overrides without hesitation.
-
-**The blanket ban on the passive is wrong** (Orwell 4, Strunk 11). Williams gives the real rule: the passive fails when it hides the character, and succeeds when the character is unknown, irrelevant, or already known to the reader. Strunk and White's own section famously misidentifies several of its examples as passive when they are not. In methods and results, *we measured* is better than *measurements were obtained* - but *the samples were stored at -80 C* is correct and needs no actor.
-
-**The *which*/*that* rule is invented.** Restrictive *which* has been standard English for centuries. Use whichever reads better.
-
-**Singular *they* is correct,** and is required here for a person whose pronouns are unstated. Strunk's objection is obsolete.
-
-**Never use a scientific word** (Orwell 5) does not apply to writing for scientists. The everyday equivalent is often less precise, and precision outranks familiarity for a specialist reader.
-
-Garner's *Modern English Usage* is the arbiter for any disputed usage not settled here; his Language-Change Index rates how far a prescription has been overtaken.
-
-## 8. The limit
+## 6. The limit
 
 Every rule above is a means to clarity and force, never an end. Compression can overshoot: a clipped sentence that makes the reader reconstruct your meaning has failed the same test as a padded one, from the other side. Deleted hedges become false confidence. Deleted transitions become disconnected paragraphs.
 
