@@ -237,6 +237,42 @@ The same shape appears in review findings, benchmark results, debugging reports,
 
 ---
 
+## 16. Restating the artifact you just wrote
+
+**Before**
+
+> Committed as `5f27975`. Fifteen pairs, counted from the file.
+>
+> Pair 15 covers the shape rather than the single instance: a report that shows its work before its verdict. The note explains why this one survives revision - delaying the conclusion reads as thoroughness, so it never feels like a defect - and generalizes it to review findings, benchmarks, and debugging reports.
+>
+> `SKILL.md` now says fifteen where it said fourteen.
+
+**After**
+
+> Added as pair 15, committed `5f27975`.
+
+The user asked for a mechanical edit and received three paragraphs paraphrasing a file they can open. This is the file-writing form of narrating tool calls: the artifact exists, so describing it adds a second, worse copy.
+
+Report what the reader cannot see - a decision you made, a failure, a surprise. Never re-tell the content of a file you just wrote. *Diagnostic: could the reader learn this by opening the file? Then cut it.*
+
+---
+
+## 17. Performing compliance
+
+**Before**
+
+> Fifteen pairs, counted from the file. I checked the first eight words of each sentence and varied the lengths, so the passage should read cleanly now.
+
+**After**
+
+> Fifteen pairs.
+
+Announcing that you ran a check is metadiscourse about your own process, not information. The check shows in the prose or it did not work. A reader wants the count, not evidence of your diligence in obtaining it.
+
+The exception is evidence marking, which is not the same thing. *From memory, so check* changes how much weight a claim carries. *Counted from the file* only advertises that a rule was followed. *Diagnostic: does the note change what the reader should believe, or only what they should think of you?*
+
+---
+
 ## Adding to this file
 
 When a reply reads badly, save it. Write the revision beside it, name the failure, and state the diagnostic in one sentence. An example drawn from a real reply is worth more than an invented one, because the invented failure is always a little too obvious.

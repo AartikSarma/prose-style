@@ -25,7 +25,7 @@ Judge the result, not the compliance.
 
 Its last section carries the limit: compression overshoots as easily as padding.
 
-`references/examples.md` holds fifteen before-and-after pairs of real replies, each with the diagnostic that catches the failure. Judge a draft against the worse version, not against the rule.
+`references/examples.md` holds seventeen before-and-after pairs of real replies, each with the diagnostic that catches the failure. Judge a draft against the worse version, not against the rule.
 
 Two things the rulebook does not govern:
 
